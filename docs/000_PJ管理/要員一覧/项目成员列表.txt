@@ -139,10 +139,7 @@ Web开发，Java，Spring Boot，Structs
 日语能力:N1~N2，熟悉的人容易交流。
 开发经验有无:ABAP开发
 目前居住城市:千叶
-备注:salesforce也使用到Java，CRM(Custom Reship Management), Oracle数据库切换到S/4-HANA，SAP系统大部分都使用S/4-HANA.
-
-东京数据中心，大阪数据中心，OCI（Oracle）。环境搭建成功
-
+备注:salesforce也使用到Java，CRM(Custom Reship Management), Oracle数据库切换到S/4-HANA，SAP系统大部分都使用S/4-HANA。环境搭建成功
 ****************************************
 微信昵称:鱼摆摆
 性别:女
