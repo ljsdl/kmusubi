@@ -707,7 +707,7 @@ CREATE TABLE IF NOT EXISTS `wp20210926112957_users` (
 --
 
 INSERT INTO `wp20210926112957_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
-(1, 'npoadmin', '$P$BIXyLa1nCfjHjBUngT9QC0pjDfjdJr0', 'npoadmin', 'tobiookami@yahoo.co.jp', 'http://www.zhuzhuming.com', '2021-09-26 02:34:33', '', 0, 'npoadmin'),
+(1, 'npoadmin', '$P$BIXyLa1nCfjHjBUngT9QC0pjDfjdJr0', 'npoadmin', 'tobiookami@yahoo.co.jp', '', '2021-09-26 02:34:33', '', 0, 'npoadmin'),
 (2, 'lishuang', '$P$BNj.t7j8vjGBSHljyfJ.r7VVP2pTpe1', 'lishuang', 'ziyan2011@live.cn', 'http://localhost/kmusubi', '2021-09-26 10:16:09', '1632651369:$P$BA7AA8wD9HcWKYbERZGRAkujnKXB7q/', 0, '双李'),
 (3, 'test', '$P$BXMkgFLpCrkC9Zf15IlLuCo3Wt/pXx0', 'test', 'test@gmail.com', '', '2022-02-05 12:29:55', '1644064195:$P$BtIRksGmthAxTfldXITzX2./NoJhsC.', 0, 'testtest');
 
