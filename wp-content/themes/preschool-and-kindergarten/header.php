@@ -27,7 +27,6 @@
     do_action( 'preschool_and_kindergarten_before_wp_head' );
 
     wp_head(); 
-
 ?>
 </head>
 
@@ -40,7 +39,7 @@
     * @hooked preschool_and_kindergarten_page_start 
     */
     do_action( 'preschool_and_kindergarten_before_page_start' ); 
-
+    
     /**
     * preschool_and_kindergarten Header Top
     * 

@@ -497,12 +497,9 @@ function preschool_and_kindergarten_footer_bottom(){
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>.
         <?php } ?>
             
-        <?php esc_html_e( '| Developed By ', 'preschool-and-kindergarten' ); ?>
-        <a href="<?php echo esc_url( 'https://zhuzhuming.com/' ); ?>" rel="nofollow" target="_blank"><?php echo esc_html__( 'zhuzhuming', 'preschool-and-kindergarten' ); ?></a>.
-        <!-- 
+        <?php esc_html_e( 'Preschool and Kindergarten | Developed By ', 'preschool-and-kindergarten' ); ?>
+        <a href="<?php echo esc_url( 'https://rarathemes.com/' ); ?>" rel="nofollow" target="_blank"><?php echo esc_html__( 'Rara Theme', 'preschool-and-kindergarten' ); ?></a>.
         <?php printf( esc_html__( 'Powered by %s', 'preschool-and-kindergarten' ), '<a href="'. esc_url( __( 'https://wordpress.org/', 'preschool-and-kindergarten' ) ) .'" target="_blank">WordPress.</a>' ); ?>
-        -->
-        
         <?php if ( function_exists( 'the_privacy_policy_link' ) ) {
                 the_privacy_policy_link();
             } ?>
