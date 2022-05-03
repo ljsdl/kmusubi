@@ -148,33 +148,33 @@
 	$upload_dir = wp_upload_dir();
 
 	$directory = $upload_dir['basedir']."/rara-demo-pack/";
-	 
+	
 	//get all files in specified directory
 	$files = glob($directory . "*",GLOB_ONLYDIR);
-	 
+	
 	//print each file name
 	foreach($files as $file)
 	{
-	 //check to see if the file is a folder/directory
-	 if(is_dir($file))
-	 {
-	  	$arr[] = basename($file);
-	 }
+	//check to see if the file is a folder/directory
+	if(is_dir($file))
+	{
+		$arr[] = basename($file);
+	}
 	}
 
 	function is_url_exists($url){
-	    $ch = curl_init($url);    
-	    curl_setopt($ch, CURLOPT_NOBODY, true);
-	    curl_exec($ch);
-	    $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+		$ch = curl_init($url);    
+		curl_setopt($ch, CURLOPT_NOBODY, true);
+		curl_exec($ch);
+		$code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
-	    if($code == 200){
-	       $status = true;
-	    }else{
-	      $status = false;
-	    }
-	    curl_close($ch);
-	   return $status;
+		if($code == 200){
+		$status = true;
+		}else{
+		$status = false;
+		}
+		curl_close($ch);
+	return $status;
 	}
 	$my_theme = wp_get_theme();
 

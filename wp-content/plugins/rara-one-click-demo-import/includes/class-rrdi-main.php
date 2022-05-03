@@ -194,23 +194,23 @@ class RRDI_Theme_Demo_Import {
 	*/
 	function rrdi_settings_option_tabs() {
 
-        $options = array(
-            'Before_You_Begin'   			=> 'intro.php',
-            'Demo_Import'           		=> 'welcome.php',
-            'Pro_Theme_Demo_Import'   		=> 'installed-demos.php',
-            );
-        $options = apply_filters( 'rrdi_settings_option_tabs', $options );
-        return $options;
-    }
+		$options = array(
+			'Before_You_Begin'   			=> 'intro.php',
+			'Demo_Import'           		=> 'welcome.php',
+			'Pro_Theme_Demo_Import'   		=> 'installed-demos.php',
+			);
+		$options = apply_filters( 'rrdi_settings_option_tabs', $options );
+		return $options;
+	}
 
-    private function rddi_upload_demo_pack() {
+	private function rddi_upload_demo_pack() {
 		include_once( ABSPATH . 'wp-admin/includes/class-wp-upgrader.php' );
 
 		if ( ! current_user_can( 'upload_files' ) ) {
 			wp_die( __( 'Sorry, you are not allowed to install demo on this site.', 'rara-one-click-demo-import' ) );
 		}
 
-		// check_admin_referer( 'demo-upload' );
+		check_admin_referer( 'demo-upload' );
 
 		$file_upload = new File_Upload_Upgrader( 'demozip', 'package' );
 
@@ -248,28 +248,28 @@ class RRDI_Theme_Demo_Import {
 			?>
 			</h1>
 			<div id="tabs-container">
-			    <div class="tab">
-				    <ul class="tabs-menu">
+				<div class="tab">
+					<ul class="tabs-menu">
 						<?php
 						$settings_tab = $this->rrdi_settings_option_tabs();
 							$count = 0;
 							foreach ($settings_tab as $key => $value) { 
 								$tab_label = preg_replace('/_/', ' ', $key);
 								?>
-					        	<li <?php if($count==0){ ?>class="current"<?php } ?>><a href="<?php echo $key;?>"><?php echo $tab_label;?></a></li>
-					        <?php $count++;
-					        } ?>
-				    </ul>
-			        <?php
+								<li <?php if($count==0){ ?>class="current"<?php } ?>><a href="<?php echo $key;?>"><?php echo $tab_label;?></a></li>
+							<?php $count++;
+							} ?>
+					</ul>
+					<?php
 					$counter = 0;
-			        foreach ($settings_tab as $key => $value) { ?>
-			        <div id="<?php echo $key;?>" class="tab-content" <?php if($counter==0){ ?> style="display: block;" <?php } ?>>
-			           	<?php	
+					foreach ($settings_tab as $key => $value) { ?>
+					<div id="<?php echo $key;?>" class="tab-content" <?php if($counter==0){ ?> style="display: block;" <?php } ?>>
+						<?php	
 							include_once RRDI_PATH . '/includes/settings/'.strtolower($value);
-			        	?>
-			        </div>
-			        <?php $counter++; } ?>
-			    </div>
+						?>
+					</div>
+					<?php $counter++; } ?>
+				</div>
 			</div>
 		</div>
 	<?php

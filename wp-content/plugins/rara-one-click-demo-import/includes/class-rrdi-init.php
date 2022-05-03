@@ -27,13 +27,12 @@ class RDDI_init
 			add_action( 'admin_notices', 'rrdi_old_php_admin_error_notice' );
 		}
 		else {
- 
-		    $upload = wp_upload_dir();
-		    $upload_dir = $upload['basedir'];
-		    $upload_dir = $upload_dir . '/rara-demo-pack';
-		    	if (! is_dir($upload_dir)) {
-		       		mkdir( $upload_dir, 0755 );
-		    	}
+			$upload = wp_upload_dir();
+			$upload_dir = $upload['basedir'];
+			$upload_dir = $upload_dir . '/rara-demo-pack';
+				if (! is_dir($upload_dir)) {
+					mkdir( $upload_dir, 0755 );
+				}
 			
 			// Require main plugin file.
 			require RRDI_PATH . 'includes/class-rrdi-main.php';

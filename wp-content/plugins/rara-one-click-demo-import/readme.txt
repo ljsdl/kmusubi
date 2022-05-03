@@ -2,9 +2,9 @@
 Contributors: raratheme
 Tags: import, content, demo, data, widgets, settings
 Requires at least: 4.4.0
-Tested up to: 5.7
+Tested up to: 5.9
 Requires PHP: 5.6
-Stable tag: 1.2.9
+Stable tag: 1.3.0
 License: GPLv3 or later
 
 Make your website look like the live demo of the theme with a click!
@@ -112,6 +112,10 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
 == Changelog ==
+
+= 1.3.0 =
+* fixes: Fixed CSRF related security issues in demo file upload.
+* Fixes: Minor Bug Fixes.
 
 = 1.2.9 =
 * WORDPRESS 5.6 AND PHP 8 COMPATIBILITY FIXES
