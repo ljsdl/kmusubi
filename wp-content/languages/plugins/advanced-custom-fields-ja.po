@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Plugins - Advanced Custom Fields - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-09-13 00:55:01+0000\n"
+"PO-Revision-Date: 2022-03-30 20:46:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"X-Generator: GlotPress/3.0.0-rc.3\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Advanced Custom Fields - Stable (latest release)\n"
 
@@ -225,7 +225,7 @@ msgstr "位置タイプ「%s」はすでに登録されています。"
 msgid "Class \"%s\" does not exist."
 msgstr "クラス \"%s\" は存在しません。"
 
-#: acf.php:437 includes/admin/admin-field-group.php:385
+#: acf.php:440 includes/admin/admin-field-group.php:385
 #: includes/admin/admin-field-groups.php:230
 msgctxt "post status"
 msgid "Disabled"
@@ -350,7 +350,7 @@ msgstr "特権管理者"
 
 #: includes/locations/class-acf-location-current-user-role.php:22
 msgid "Current User Role"
-msgstr "現在の権限グループ"
+msgstr "現在のユーザー権限グループ"
 
 #: includes/locations/class-acf-location-page-template.php:73
 #: includes/locations/class-acf-location-post-template.php:85
@@ -402,6 +402,10 @@ msgstr "また、すべてのプレミアムアドオン ( %s) が最新版に�
 #: includes/admin/views/html-notice-upgrade.php:29
 msgid "This version contains improvements to your database and requires an upgrade."
 msgstr "このバージョンにはデータベースの改善が含まれており、アップグレードが必要です。"
+
+#: includes/admin/views/html-notice-upgrade.php:29
+msgid "Thank you for updating to %1$s v%2$s!"
+msgstr "%1$s v%2$sへの更新をありがとうございます。"
 
 #: includes/admin/views/html-notice-upgrade.php:28
 msgid "Database Upgrade Required"
@@ -677,7 +681,7 @@ msgstr "アップグレードに失敗しました。"
 
 #: includes/admin/views/html-admin-page-upgrade-network.php:162
 msgid "Upgrade complete."
-msgstr "アップグレートが完了しました。"
+msgstr "アップグレードが完了しました。"
 
 #: includes/admin/views/html-admin-page-upgrade-network.php:148
 #: includes/admin/views/html-admin-page-upgrade.php:31
@@ -701,6 +705,10 @@ msgstr "データベースのアップグレードが完了しました。<a hre
 msgid "Site is up to date"
 msgstr "サイトは最新状態です"
 
+#: includes/admin/views/html-admin-page-upgrade-network.php:78
+msgid "Site requires database upgrade from %1$s to %2$s"
+msgstr "%1$s から %2$s へのデータベースのアップグレードが必要です"
+
 #: includes/admin/views/html-admin-page-upgrade-network.php:36
 #: includes/admin/views/html-admin-page-upgrade-network.php:47
 msgid "Site"
@@ -714,7 +722,7 @@ msgstr "サイトをアップグレード"
 
 #: includes/admin/views/html-admin-page-upgrade-network.php:26
 msgid "The following sites require a DB upgrade. Check the ones you want to update and then click %s."
-msgstr "以下のサイトはデータベースのアップグレードが必要です。アップグレードしたいものにチェックを入れて、%s をクリックしてください。"
+msgstr "以下のサイトはデータベースのアップグレードが必要です。更新したいものにチェックを入れて、%s をクリックしてください。"
 
 #: includes/admin/views/field-group-field-conditional-logic.php:172
 #: includes/admin/views/field-group-locations.php:38
@@ -850,14 +858,14 @@ msgstr[0] "使用中 <span class=\"count\">(%s)</span>"
 
 #: includes/admin/admin-upgrade.php:201
 msgid "Review sites & upgrade"
-msgstr "サイトをレビューして更新"
+msgstr "サイトをレビューしてアップグレード"
 
 #: includes/admin/admin-upgrade.php:51 includes/admin/admin-upgrade.php:113
 #: includes/admin/admin-upgrade.php:114 includes/admin/admin-upgrade.php:177
 #: includes/admin/views/html-admin-page-upgrade-network.php:24
 #: includes/admin/views/html-admin-page-upgrade.php:26
 msgid "Upgrade Database"
-msgstr "データベースを更新"
+msgstr "データベースをアップグレード"
 
 #: includes/admin/admin.php:49 includes/admin/views/field-group-options.php:142
 msgid "Custom Fields"
@@ -874,6 +882,10 @@ msgstr "このフィールドの移動先を選択してください"
 #: includes/admin/admin-field-group.php:758
 msgid "Close Window"
 msgstr "ウィンドウを閉じる"
+
+#: includes/admin/admin-field-group.php:754
+msgid "The %1$s field can now be found in the %2$s field group"
+msgstr "%1$s フィールドは現在 %2$s フィールドグループにあります"
 
 #: includes/admin/admin-field-group.php:752
 msgid "Move Complete."
@@ -955,7 +967,7 @@ msgstr "変更を保存するまでこのフィールドは移動できません
 #: assets/build/js/acf-field-group.js:893
 #: assets/build/js/acf-field-group.js:1110
 msgid "The string \"field_\" may not be used at the start of a field name"
-msgstr "\"field_\" はフィールド名の先頭に使うことはできません"
+msgstr "\"field_\" という文字列はフィールド名の先頭に使うことはできません"
 
 #: includes/admin/admin-field-group.php:93
 msgid "Field group draft updated."
@@ -1184,7 +1196,7 @@ msgstr "編集"
 msgid "The changes you made will be lost if you navigate away from this page"
 msgstr "このページから移動した場合、変更は失われます"
 
-#: includes/api/api-helpers.php:3423
+#: includes/api/api-helpers.php:3413
 msgid "File type must be %s."
 msgstr "ファイル形式は %s である必要があります。"
 
@@ -1193,34 +1205,34 @@ msgstr "ファイル形式は %s である必要があります。"
 #: includes/admin/views/field-group-field-conditional-logic.php:170
 #: includes/admin/views/field-group-locations.php:36
 #: includes/admin/views/html-location-group.php:3
-#: includes/api/api-helpers.php:3419 assets/build/js/acf-field-group.js:447
+#: includes/api/api-helpers.php:3409 assets/build/js/acf-field-group.js:447
 #: assets/build/js/acf-field-group.js:1727
 #: assets/build/js/acf-field-group.js:538
 #: assets/build/js/acf-field-group.js:2055
 msgid "or"
 msgstr "または"
 
-#: includes/api/api-helpers.php:3392
+#: includes/api/api-helpers.php:3382
 msgid "File size must not exceed %s."
 msgstr "ファイルサイズは %s 以下である必要があります。"
 
-#: includes/api/api-helpers.php:3387
+#: includes/api/api-helpers.php:3377
 msgid "File size must be at least %s."
 msgstr "ファイルサイズは %s 以上である必要があります。"
 
-#: includes/api/api-helpers.php:3372
+#: includes/api/api-helpers.php:3362
 msgid "Image height must not exceed %dpx."
 msgstr "画像の高さは %dpx 以下である必要があります。"
 
-#: includes/api/api-helpers.php:3367
+#: includes/api/api-helpers.php:3357
 msgid "Image height must be at least %dpx."
 msgstr "画像の高さは %dpx 以上である必要があります。"
 
-#: includes/api/api-helpers.php:3353
+#: includes/api/api-helpers.php:3343
 msgid "Image width must not exceed %dpx."
 msgstr "画像の幅は %dpx 以下である必要があります。"
 
-#: includes/api/api-helpers.php:3348
+#: includes/api/api-helpers.php:3338
 msgid "Image width must be at least %dpx."
 msgstr "画像の幅は %dpx 以上である必要があります。"
 
@@ -1327,7 +1339,7 @@ msgstr "%s はすでに存在しています"
 
 #: includes/fields/class-acf-field-taxonomy.php:862
 msgid "User unable to add new %s"
-msgstr "新規 %s を追加できません"
+msgstr "ユーザーが新規 %s を追加できません"
 
 #: includes/fields/class-acf-field-taxonomy.php:807
 msgid "Term ID"
@@ -1766,7 +1778,7 @@ msgstr "リンク配列"
 
 #: includes/fields/class-acf-field-link.php:142
 msgid "Opens in a new window/tab"
-msgstr "(新しいウインドウで開く)"
+msgstr "新しいウィンドウまたはタブで開く"
 
 #: includes/fields/class-acf-field-link.php:137
 msgid "Select Link"
@@ -1845,7 +1857,7 @@ msgstr "red : Red"
 #: includes/fields/class-acf-field-radio.php:192
 #: includes/fields/class-acf-field-select.php:365
 msgid "For more control, you may specify both a value and label like this:"
-msgstr "下記のように記述すると、値とラベルの両方を制御することができます。"
+msgstr "下記のように記述すると、値とラベルの両方を制御することができます:"
 
 #: includes/fields/class-acf-field-button-group.php:148
 #: includes/fields/class-acf-field-checkbox.php:325
@@ -2017,6 +2029,11 @@ msgstr "新規投稿作成時に表示"
 #: includes/fields/class-acf-field-text.php:25
 msgid "Text"
 msgstr "テキスト"
+
+#: includes/fields/class-acf-field-relationship.php:752
+msgid "%1$s requires at least %2$s selection"
+msgid_plural "%1$s requires at least %2$s selections"
+msgstr[0] "%1$sは%2$s個以上選択する必要があります"
 
 #: includes/fields/class-acf-field-post_object.php:424
 #: includes/fields/class-acf-field-relationship.php:668
@@ -2356,7 +2373,7 @@ msgstr "oEmbed"
 
 #: includes/fields/class-acf-field-true_false.php:190
 msgid "Text shown when inactive"
-msgstr "非アクティブ時に表示されるテキスト"
+msgstr "無効化時に表示されるテキスト"
 
 #: includes/fields/class-acf-field-true_false.php:189
 msgid "Off Text"
@@ -2364,7 +2381,7 @@ msgstr "無効化時のテキスト"
 
 #: includes/fields/class-acf-field-true_false.php:173
 msgid "Text shown when active"
-msgstr "アクティブ時に表示されるテキスト"
+msgstr "有効時に表示するテキスト"
 
 #: includes/fields/class-acf-field-true_false.php:172
 msgid "On Text"
@@ -2546,85 +2563,85 @@ msgstr "表示形式"
 msgid "Time Picker"
 msgstr "時間選択ツール"
 
-#: acf.php:442
+#: acf.php:445
 msgid "Disabled <span class=\"count\">(%s)</span>"
 msgid_plural "Disabled <span class=\"count\">(%s)</span>"
 msgstr[0] "停止中 <span class=\"count\">(%s)</span>"
 
-#: acf.php:399
+#: acf.php:402
 msgid "No Fields found in Trash"
 msgstr "ゴミ箱にフィールドが見つかりません"
 
-#: acf.php:398
+#: acf.php:401
 msgid "No Fields found"
 msgstr "フィールドが見つかりません"
 
-#: acf.php:397
+#: acf.php:400
 msgid "Search Fields"
 msgstr "フィールドを検索"
 
-#: acf.php:396
+#: acf.php:399
 msgid "View Field"
 msgstr "フィールドを表示"
 
-#: acf.php:395 includes/admin/views/field-group-fields.php:56
+#: acf.php:398 includes/admin/views/field-group-fields.php:56
 msgid "New Field"
 msgstr "新規フィールド"
 
-#: acf.php:394
+#: acf.php:397
 msgid "Edit Field"
 msgstr "フィールドを編集"
 
-#: acf.php:393
+#: acf.php:396
 msgid "Add New Field"
 msgstr "新規フィールドを追加"
 
-#: acf.php:391
+#: acf.php:394
 msgid "Field"
 msgstr "フィールド"
 
-#: acf.php:390 includes/admin/admin-field-group.php:233
+#: acf.php:393 includes/admin/admin-field-group.php:233
 #: includes/admin/admin-field-groups.php:266
 msgid "Fields"
 msgstr "フィールド"
 
-#: acf.php:365
+#: acf.php:368
 msgid "No Field Groups found in Trash"
 msgstr "ゴミ箱にフィールドグループが見つかりません"
 
-#: acf.php:364
+#: acf.php:367
 msgid "No Field Groups found"
 msgstr "フィールドグループが見つかりません"
 
-#: acf.php:363
+#: acf.php:366
 msgid "Search Field Groups"
 msgstr "フィールドグループを検索"
 
-#: acf.php:362
+#: acf.php:365
 msgid "View Field Group"
 msgstr "フィールドグループを表示"
 
-#: acf.php:361
+#: acf.php:364
 msgid "New Field Group"
 msgstr "新規フィールドグループ"
 
-#: acf.php:360
+#: acf.php:363
 msgid "Edit Field Group"
 msgstr "フィールドグループを編集"
 
-#: acf.php:359
+#: acf.php:362
 msgid "Add New Field Group"
 msgstr "新規フィールドグループを追加"
 
-#: acf.php:358 acf.php:392 includes/admin/admin.php:51
+#: acf.php:361 acf.php:395 includes/admin/admin.php:51
 msgid "Add New"
 msgstr "新規追加"
 
-#: acf.php:357
+#: acf.php:360
 msgid "Field Group"
 msgstr "フィールドグループ"
 
-#: acf.php:356 includes/admin/admin.php:50
+#: acf.php:359 includes/admin/admin.php:50
 msgid "Field Groups"
 msgstr "フィールドグループ"
 
