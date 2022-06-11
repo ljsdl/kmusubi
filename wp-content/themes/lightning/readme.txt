@@ -2,7 +2,7 @@
 Lightning WordPress theme, Copyright (C) 2015-2022 Vektor,Inc.
 Lightning WordPress theme is licensed under the GPL.
 Tested up to: 5.9.3
-Stable tag: 14.20.3
+Stable tag: 14.22.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,8 +38,38 @@ https://www.vektor-inc.co.jp/inquiry/
 
 == Changelog ==
 
+v14.22.1
+[ G3 / G2 ][ Specification Change ] Allow iframe tag on post list filter
+
+v14.22.0
+[ G3 / G2 ][ Specification Change ] Allow iframe tag on post list filter
+
+v14.21.5
+[ G2 ] Fix VK Slider block in case of full width
+[ G3 / G2 ][ Bug fix ] Fix WordPress core button color
+[ G3 / G2 ][ Bug fix / Specification Change ] Fix clumn gap
+
+v14.21.4
+[ G3 ][ Bug fix ] Fix Global Menu Layout
+
+v14.21.3
+[ G3 ][ Bug fix ] Fix Global Menu Layout
+
+v14.21.2
+[ G3 ][ Bug fix ] Fix Global Menu Layout
+
+v14.21.1
+[ G3 ][ Bug fix ] Fix Global Menu
+
+v14.21.0
+[ G3 / G2 ][ Others ] Cope with WP6.0 
+[ G3 / G2 ][ Bug fix ] Fix button default design
+[ G3 / G2 ][ Bug fix ] Fix Mobile Nav close transform
+[ G3 ][ Bug fix ] Fixed global navigation item width
+[ G3 ][ Bug fix ] Fix Google Web Fonts Japanese display on Edge
+
 v14.20.3
-[ G3 / G2 ][ Gug Fix ] Fix load Font Awesome Files on WordPress.com
+[ G3 / G2 ][ Bug Fix ] Fix load Font Awesome Files on WordPress.com
 
 v14.20.2
 [ G3 ][ Others ] Update Breadcrumb composer library 0.2.2

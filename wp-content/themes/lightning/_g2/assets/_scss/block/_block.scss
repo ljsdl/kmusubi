@@ -18,6 +18,7 @@ entry-body
 }
 .alignfull {
 	&,
+	&.vk_slider,
 	&.wp-block-image,
 	&.wp-block-cover-image,
 	&.wp-block-cover {
@@ -29,6 +30,7 @@ entry-body
 }
 .alignwide {
 	&,
+	&.vk_slider,
 	&.wp-block-image,
 	&.wp-block-cover-image,
 	&.wp-block-cover {
@@ -89,15 +91,26 @@ entry-body
 .wp-block-button {
 	&__link {
 		font-size: 1rem;
-		border-radius: var(--vk-size-radius);
-		transition: all 0.1s ease-in;
 		background-color: var(--vk-color-primary);
+		transition: all 0.1s ease-in;
 	}
-	.wp-block-button__link:hover {
+	.wp-block-buttons &__link{ // ボタンブロック単独のCSSの方が後に出力されるて負けるため
+		border-radius: var(--vk-size-radius);
+	}
+	.wp-block-button__link:hover,
+	.wp-block-button__link:hover:not(.has-background){
 		text-decoration: none;
 		background-color: var(--vk-color-primary-dark);
 		border-color: var(--vk-color-primary-dark);
 		color:#fff;
+	}
+	.wp-block-button__link.has-background:hover{
+		// コアのカラーパレットのCSSが !important 付けてくるのでやむなく !important
+		background-color: var(--vk-color-primary-dark) !important;
+	}
+	.wp-block-button__link:hover:not(.has-background){
+		// コアのカラーパレットのCSSが !important 付けてくるのでやむなく !important
+		color:#fff !important;
 	}
 }
 .wp-block-button__link {
